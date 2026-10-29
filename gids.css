@@ -1,0 +1,331 @@
+@font-face {
+    font-family: 'Times New Roman', Times, serif;
+    src: url();
+}
+body {
+    color: rgba(102, 153, 204);
+    background-color: black;
+    font-weight: bold;
+}
+.taalKeuze {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.taalKeuzeKnop {
+    color: white;
+    background-color: rgba(102, 153, 204);
+    border-radius: 5px;
+}
+.flexInBody {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border: 0;
+}
+.titelVoor {
+    text-align: center;
+    font-size: 5vw;
+    display: flex;
+    width: 95vw;
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    color: rgba(102, 153, 204);
+    justify-content: center;
+    align-items: center;
+}
+p, h3 {
+    color: rgba(102, 153, 204);
+}
+h3 {
+    margin-top: 10vh;
+}
+.terug {
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+    color: white;
+    background-color: rgba(102, 153, 204);
+    border: 0px, hidden, transparent ;
+    border-radius: 5px;
+}
+table, tr, td {
+    border: 0.3vw solid black;
+    border-radius: 10px;
+}
+.button {
+    color: white;
+    background-color: rgba(102, 153, 204);
+    height: 15vw;
+    width: 15vw;
+    font-size: 3vw;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border: 0px, hidden, transparent ;
+    border-radius: 5px;
+}
+.buttonGroen {
+    color: white;
+    background-color: #66cc66;
+    height: 10vw;
+    width: 10vw;
+    font-size: 3vw;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.buttonRood {
+    color: white;
+    background-color: #cc6666;
+    height: 10vw;
+    width: 10vw;
+    font-size: 3vw;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+img {
+    border: 1px, solid, rgba(102, 153, 204);
+}
+.taalSwitch {
+    position: fixed;
+    top: 2.5vh;
+    right: 2.5vw;
+    width: 25vw;
+    z-index: 1;
+    border: 0px;
+}
+video {
+    width: 90vw;
+    border: 1px, solid, rgba(102, 153, 204);
+}
+.logo {
+    position: fixed;
+    width: 25vw;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    border: 0px;
+}
+.flexOpties {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+.flexTrajecten {
+    display: flex;
+    flex-direction: column;
+}
+.trajecten {
+    color: white;
+    background-color: rgba(102, 153, 204);
+    height: 10vh;
+    width: 20vw;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    font-size: 3vw;
+}
+.logoVoor {
+    position: fixed;
+    bottom: 2.5vh;
+    right: 2.5vw;
+    width: 25vw;
+    z-index: 1;
+    border: 0px;
+}
+a {
+    font-size: 18pt;
+    color: rgba(102, 153, 204);
+    text-decoration: none;
+}
+a:active {
+    color: rgb(82, 123, 163);;
+    text-decoration: underline;
+}
+@keyframes roteren {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.roterend {
+    animation: roteren 20s linear infinite;
+    min-width: unset;
+    min-height: unset;
+    max-width: unset;
+    max-height: unset;
+    width: 75%;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.trajectKnop {
+    color: white;
+}
+.fotoPagina {
+    width: 90vw;
+}
+.flexInBodyKaart {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border: 0;
+}
+.kaart {
+    color: white;
+    background-color: black;
+    width: 90vw;
+    height: 50vw;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    font-size: 5vw;
+    display: flex;
+    background-image: url("kaart/grond/gelijkvloers.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.flexKaart {
+    position: relative;
+    width: 100vw;
+    height: 55vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pijl {
+    color: black;
+    background-color: rgba(102, 153, 204);
+    width: 9vw;
+    height: 9vw;
+    text-align: center;
+    border-radius: 100%;
+    margin: 4px;
+}
+.kaartFotoGrond {
+    background-image: url("kaart/grond/gelijkvloers.svg");
+    width: 100vw;
+}
+.kaartFoto1steWest {
+    background-image: url("kaart/eerste/1steWest.svg");
+}
+.kaartFoto1steOost{
+    background-image: url("kaart/eerste/1steOost.svg");
+}
+.kaartFoto2deWest {
+    background-image: url("kaart/tweede/2de\ West.svg");
+}
+.kaartFoto2deOost {
+    background-image: url("kaart/tweede/2de\ Oost.svg");
+}
+.kaartFotoTerras {
+    background-image: url("kaart/derde/terras.svg");
+}
+.kaartKnop {
+    position: absolute;
+    padding: 0;
+    width: 9vw;
+    height: 3vw;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (orientation: landscape) {
+    .titelVoor {
+        font-size: 2vw;
+    }
+    .button, .buttonGroen, .buttonRood {
+        height: 3vw;
+        width: 3vw;
+        font-size: smaller;
+    }
+    .roterend {
+        width: 20%;
+    }
+    .kaart {
+        width: 45vw;
+        height: 25vw;
+    }
+    .knop0 { left: 45.5%; }
+    .knop1 { left: 46.1%; }
+    .knop2 { left: 42.5%; }
+    .knop3 { left: 48.5%; }
+    .knop4 { left: 33.8%; }
+    .knop5 { left: 38.9%; }
+    .knop6 { left: 45.2%; }
+    .knop7 { left: 51.5%; }
+    .knop8 { left: 56.3%; }
+    .knop9 { left: 47.3%; }
+    .knop10 { left: 39.8%; }
+    .knop11 { left: 44.3%; }
+    .knop12 { left: 46.1%; }
+    .knop13 { left: 54.2%; }
+    .knop14 { left: 60.5%; }
+    .knop15 { left: 53.9%; }
+    .knop16 { left: 44.0%; }
+    .knop17 { left: 62.6%; }
+    .knop18 { left: 62.6%; }
+    .knop19 { left: 62.6%; }
+    .knop20 { left: 62.6%; }
+    .knop21 { left: 56.6%; }
+    .knop22 { left: 44.6%; }
+    .knop23 { left: 48.5%; }
+    .knop24 { left: 48.5%; }
+    .knop25 { left: 38.3%; }
+    .knop26 { left: 38.3%; }
+    .knop27 { left: 38.3%; }
+    .knop28 { left: 51.2%; }
+    .knop29 { left: 27.2%; }
+    .knop30 { left: 23.9%; }
+    .knop31 { left: 30.2%; }
+    .knop32 { left: 35.9%; }
+    .knop33 { left: 41.3%; }
+    .knop34 { left: 27.2%; }
+    .knop35 { left: 46.4%; }
+    .knop36 { left: 48.2%; }
+    .knop37 { left: 54.8%; }
+    .knop38 { left: 60.2%; }
+    .knop39 { left: 61.4%; }
+    .knop40 { left: 74.0%; }
+    .knop41 { left: 74.0%; }
+    .knop42 { left: 74.0%; }
+    .knop43 { left: 74.0%; }
+    .knop44 { left: 68.0%; }
+    .knop45 { left: 74.0%; }
+    .knop46 { left: 68.0%; }
+    .knop47 { left: 24.2%; }
+    .knop48 { left: 38.9%; }
+    .knop49 { left: 36.8%; }
+    .knop50 { left: 74.0%; }
+    .knop51 { left: 44.6%; }
+    .knop52 { left: 27.2%; }
+    .knop53 { left: 27.2%; }
+    .knop54 { left: 53.6%; }
+    .knop55 { left: 49.4%; }
+    .knop56 { left: 53.0%; }
+    .knop57 { left: 48.5%; }
+    .knop58 { left: 59.0%; }
+    .knop59 { left: 63.8%; }
+    .knop60 { left: 25.7%; }
+    .knop61 { left: 44.0%; }
+    .knop62 { left: 27.2%; }
+    .knop63 { left: 68.9%; }
+    .knop64 { left: 42.2%; }
+    .knop65 { left: 54.2%; }
+    .knop66 { left: 62.6%; }
+    .knop67 { left: 59.6%; }
+    .knop68 { left: 51.8%; }
+    .knop69 { left: 38.0%; }
+    .knop70 { left: 39.2%; }
+    .knop71 { left: 32.9%; }
+    .knop72 { left: 22.7%; }
+}
