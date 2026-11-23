@@ -7,6 +7,15 @@ body {
     background-color: black;
     font-weight: bold;
 }
+a {
+    font-size: 18pt;
+    color: rgba(102, 153, 204);
+    text-decoration: none;
+}
+a:active {
+    color: rgb(82, 123, 163);;
+    text-decoration: underline;
+}
 .taalKeuze {
     height: 50vh;
     display: flex;
@@ -36,7 +45,6 @@ body {
     border: 1px;
     border-style: solid;
     border-radius: 10px;
-    color: rgba(102, 153, 204);
     justify-content: center;
     align-items: center;
 }
@@ -46,7 +54,7 @@ p, h3 {
 h3 {
     margin-top: 10vh;
 }
-.terug {
+.knop {
     margin-top: 2vh;
     margin-bottom: 10vh;
     color: white;
@@ -90,14 +98,6 @@ table, tr, td {
 img {
     border: 1px, solid, rgba(102, 153, 204);
 }
-.taalSwitch {
-    position: fixed;
-    top: 2.5vh;
-    right: 2.5vw;
-    width: 25vw;
-    z-index: 1;
-    border: 0px;
-}
 video {
     width: 90vw;
     border: 1px, solid, rgba(102, 153, 204);
@@ -109,6 +109,15 @@ video {
     right: 10px;
     z-index: 2;
     border: 0px;
+}
+.home {
+    position: fixed;
+    width: 25vw;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    border: 0px;
+    font-size: xx-large;
 }
 .flexOpties {
     display: flex;
@@ -138,15 +147,7 @@ video {
     z-index: 1;
     border: 0px;
 }
-a {
-    font-size: 18pt;
-    color: rgba(102, 153, 204);
-    text-decoration: none;
-}
-a:active {
-    color: rgb(82, 123, 163);;
-    text-decoration: underline;
-}
+
 @keyframes roteren {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }

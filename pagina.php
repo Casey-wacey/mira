@@ -5,8 +5,8 @@ session_start();
     // Table and column names can't be bound parameters, so whitelist them
     $talen = [
         "Nl" => ["tabel" => "tblNl", "kolom" => "OpstellingNr"],
-        "Fr" => ["tabel" => "tblFr", "kolom" => "OpstellingFr"],
-        "En" => ["tabel" => "tblEn", "kolom" => "OpstellingEn"],
+        "Fr" => ["tabel" => "tblFr", "kolom" => "OpstellingNr"],
+        "En" => ["tabel" => "tblEn", "kolom" => "OpstellingNr"],
     ];
     $taal = $_SESSION["taal"] ?? "Nl";
     $t = $talen[$taal] ?? $talen["Nl"];
@@ -33,7 +33,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="pagetitel"></title>
+    <title id="pagina"></title>
     <link rel="shortcut icon" href="media/fotos/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="gids.css">
 </head>
@@ -48,6 +48,6 @@ session_start();
     <p id="audioTekst"></p>
     <span id="audio"></span>
     <!--<audio controls id="extraAudio"></audio> <br>-->
-    <a href="gids.php" class="terug">terug naar hoofdpagina</a>
+    <a href="gids.php" class="home">🏠</a>
 </body>
 </html>

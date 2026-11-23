@@ -11,8 +11,7 @@
         header("Location: index.php");
         exit;
     }
-    if($_GET["taal"] == "Nl") {
-        $_SESSION["taal"] = "Nl";
+    if($taal == "Nl") {
         echo"
         <!DOCTYPE html>
         <html lang='en'>
@@ -27,7 +26,7 @@
             <p class='titelVoor' id='titelVoor'>
                 welkom bij <br> volkssterrenwacht Mira
                 <img src='media/fotos/logo.png' alt='logo' class='logoVoor'>
-                <div style='taalSwitch'><a href='index.php'>taal wijzigen</a></div>
+                <div class='knop'><a href='index.php' class='knop'>taal wijzigen</a></div>
             </p>
             <span class='flexOpties'>
                 <p>
@@ -48,8 +47,7 @@
                 <h3>Kaart:</h3>
                 ";
 
-    } else if($_GET["taal"] == "Fr") {
-        $_SESSION["taal"] = "Fr";
+    } else if($taal == "Fr") {
         echo"
         <!DOCTYPE html>
         <html lang='en'>
@@ -64,7 +62,7 @@
             <p class='titelVoor' id='titelVoor'>
                 Bienvenue à  <br> l'Observatoire public Mira
                 <img src='media/fotos/logo.png' alt='logo' class='logoVoor'>
-                <div style='taalSwitch'><a href='index.php'>changer de langue</a></div>
+                <div class='knop'><a href='index.php' class='knop'>changer de langue</a></div>
             </p>
             <span class='flexOpties'>
                 <p>
@@ -84,8 +82,7 @@
             <p>
                 <h3>carte:</h3>";
 
-    } else if($_GET["taal"] == "En") {
-        $_SESSION["taal"] = "En";
+    } else if($taal == "En") {
          echo"
         <!DOCTYPE html>
         <html lang='en'>
@@ -100,7 +97,7 @@
             <p class='titelVoor' id='titelVoor'>
                 Welcome to <br> public observatory Mira
                 <img src='media/fotos/logo.png' alt='logo' class='logoVoor'>
-                <div style='taalSwitch'><a href='index.php'>Change language</a></div>
+                <div class='knop'><a href='index.php' class='knop'>Change language</a></div>
             </p>
             <span class='flexOpties'>
                 <p>
@@ -119,10 +116,7 @@
             
             <p>
                 <h3>Map:</h3>";
-    } else if (empty($_GET) && !(isset($_SESSION["taal"]))) {
-        header("Location: index.php");
     }
-
 ?>
 
 <button class="kaart" id="kaart"></button>

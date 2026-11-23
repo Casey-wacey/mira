@@ -94,6 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document
     .getElementById("kaart")
     .addEventListener("click", function() {
-        location.href = 'kaart/grond/Gelijkvloers.html';
+        location.href = 'kaart/grond/Gelijkvloers.php';
     }) 
 })
