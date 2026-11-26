@@ -9,11 +9,11 @@
 </head>
     <body class="flexInBodyKaart">
         <div class="flexKaart kaartFotoGrond">
-            <a href="../../pagina.html?nummer=0" class="kaartKnop knop0 button">0</a>
-            <a href="../../pagina.html?nummer=1" class="kaartKnop knop1 button">1</a>
-            <a href="../../pagina.html?nummer=2" class="kaartKnop knop2 button">2</a>
-            <a href="../../pagina.html?nummer=3" class="kaartKnop knop3 button">3</a>
-            <a href="../../pagina.html?nummer=4" class="kaartKnop knop4 button">4</a>
+            <a href="../../pagina.php?nummer=0" class="kaartKnop knop0 button">0</a>
+            <a href="../../pagina.php?nummer=1" class="kaartKnop knop1 button">1</a>
+            <a href="../../pagina.php?nummer=2" class="kaartKnop knop2 button">2</a>
+            <a href="../../pagina.php?nummer=3" class="kaartKnop knop3 button">3</a>
+            <a href="../../pagina.php?nummer=4" class="kaartKnop knop4 button">4</a>
         </div>
         <a href="../eerste/1e verdieping West.php" class="pijl">↑</a>
         <a href="../../gids.php" class="terug">terug naar hoofdpagina</a>

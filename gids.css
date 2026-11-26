@@ -12,6 +12,7 @@ a {
     color: rgba(102, 153, 204);
     text-decoration: none;
 }
+
 a:active {
     color: rgb(82, 123, 163);;
     text-decoration: underline;
@@ -112,12 +113,24 @@ video {
 }
 .home {
     position: fixed;
-    width: 25vw;
-    top: 10px;
+    width: 40vw;
+    top: 5vh;
     left: 10px;
     z-index: 2;
     border: 0px;
     font-size: xx-large;
+}
+.taal {
+    position: fixed;
+    width: 40px;
+    top: 20vh;
+    left: 10px;
+    z-index: 2;
+    border: 0px;
+    font-size: xx-large;
+}
+.taalFoto {
+    width: 40px;
 }
 .flexOpties {
     display: flex;
@@ -239,7 +252,10 @@ video {
     z-index: 1;
     transform: translate(-50%, -50%);
 }
-
+.errorMsg {
+    color: red;
+    font-size: x-large;
+}
 @media only screen and (orientation: landscape) {
     .titelVoor {
         font-size: 2vw;

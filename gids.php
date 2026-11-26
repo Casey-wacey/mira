@@ -3,6 +3,9 @@
     if (isset($_GET["taal"]) && in_array($_GET["taal"], ["Nl", "Fr", "En"], true)) {
         $_SESSION["taal"] = $_GET["taal"];
     }
+    if (!isset($_SESSION["paginaFout"])) {
+        $_SESSION["paginaFout"] = false;
+    }
 
     $taal = $_SESSION["taal"] ?? null;
 
@@ -12,7 +15,7 @@
         exit;
     }
     if($taal == "Nl") {
-        echo"
+        echo "
         <!DOCTYPE html>
         <html lang='en'>
         <head>
@@ -27,6 +30,10 @@
                 welkom bij <br> volkssterrenwacht Mira
                 <img src='media/fotos/logo.png' alt='logo' class='logoVoor'>
                 <div class='knop'><a href='index.php' class='knop'>taal wijzigen</a></div>
+                "; if ($_SESSION["paginaFout"] == true) {
+                    echo "<span class='errorMsg'>Deze pagina bestaat niet. Probeer een ander nummer</span>";
+                }
+            echo "
             </p>
             <span class='flexOpties'>
                 <p>
@@ -63,6 +70,10 @@
                 Bienvenue à  <br> l'Observatoire public Mira
                 <img src='media/fotos/logo.png' alt='logo' class='logoVoor'>
                 <div class='knop'><a href='index.php' class='knop'>changer de langue</a></div>
+                "; if ($_SESSION["paginaFout"] == true) {
+                    echo "<span class='errorMsg'>Cette page n’existe pas. Essayez un autre numéro.</span>";
+                }
+            echo "
             </p>
             <span class='flexOpties'>
                 <p>
@@ -98,6 +109,10 @@
                 Welcome to <br> public observatory Mira
                 <img src='media/fotos/logo.png' alt='logo' class='logoVoor'>
                 <div class='knop'><a href='index.php' class='knop'>Change language</a></div>
+                "; if ($_SESSION["paginaFout"] == true) {
+                    echo "<span class='errorMsg'>This page does not exist. Try a different number.</span>";
+                }
+            echo "
             </p>
             <span class='flexOpties'>
                 <p>

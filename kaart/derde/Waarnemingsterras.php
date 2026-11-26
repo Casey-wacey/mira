@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mira gids</title>
+    <link rel="shortcut icon" href="../../media/fotos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../gids.css">
+</head>
+    <body class="flexInBodyKaart">
+        <div class="flexKaart kaartFotoTerras">
+            <a href="../../pagina.php?nummer=48" class="kaartKnop knop48 button">48</a>
+            <a href="../../pagina.php?nummer=49" class="kaartKnop knop49 button">49</a>
+            <a href="../../pagina.php?nummer=50" class="kaartKnop knop50 button">50</a>
+            <a href="../../pagina.php?nummer=51" class="kaartKnop knop51 button">51</a>
+            <a href="../../pagina.php?nummer=52" class="kaartKnop knop52 button">52</a>
+            <a href="../../pagina.php?nummer=53" class="kaartKnop knop53 button">53</a>
+            <a href="../../pagina.php?nummer=54" class="kaartKnop knop54 button">54</a>
+            <a href="../../pagina.php?nummer=55" class="kaartKnop knop55 button">55</a>
+            <a href="../../pagina.php?nummer=56" class="kaartKnop knop56 button">56</a>
+            <a href="../../pagina.php?nummer=57" class="kaartKnop knop57 button">57</a>
+            <a href="../../pagina.php?nummer=58" class="kaartKnop knop58 button">58</a>
+            <a href="../../pagina.php?nummer=59" class="kaartKnop knop59 button">59</a>
+            <a href="../../pagina.php?nummer=60" class="kaartKnop knop60 button">60</a>
+            <a href="../../pagina.php?nummer=61" class="kaartKnop knop61 button">61</a>
+            <a href="../../pagina.php?nummer=62" class="kaartKnop knop62 button">62</a>
+            <a href="../../pagina.php?nummer=63" class="kaartKnop knop63 button">63</a>
+
+        </div>
+        <a href="../tweede/2e verdieping West.php" class="pijl">↓</a>
+        <a href="../../gids.php" class="terug">terug naar hoofdpagina</a>
+    </body>
+</html>
