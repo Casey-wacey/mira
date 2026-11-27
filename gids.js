@@ -84,12 +84,12 @@ document.addEventListener("DOMContentLoaded", function() {
   document
     .getElementById("aarde")
     .addEventListener("click", function() {
-        location.href = 'trajecten/de_aarde.html';
+        location.href = 'trajecten.php';
     })
   document
     .getElementById("maan")
     .addEventListener("click", function() {
-        location.href = 'trajecten/de_maan.html';
+        location.href = 'trajecten.php';
     }) 
     document
     .getElementById("kaart")
